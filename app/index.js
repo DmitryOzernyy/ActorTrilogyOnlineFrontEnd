@@ -10,7 +10,7 @@ const root = createRoot(dest)
 const preloadedState = {
     counter: 0,
     chat:  ["test1", "test2", "test4", "test5", "test6", "test7", "test8","test9","test10","test11"],
-    render: "hud"
+    render: "inventory",
 }
 
 const store = configureStore({reducer: reducers, preloadedState});

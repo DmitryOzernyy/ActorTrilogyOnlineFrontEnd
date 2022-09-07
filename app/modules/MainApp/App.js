@@ -3,7 +3,8 @@ import MainApp from "./MainApp";
 
 function mapStateToProps(state){
     return {
-        render: state.render
+        render: state.render,
+        inventory: state.inventory
     };
 }
 
