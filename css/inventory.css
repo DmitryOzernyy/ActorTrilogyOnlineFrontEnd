@@ -197,3 +197,13 @@
 .itemImg {
     width: 100%;
 }
+
+.draggedItemIcon {
+    width: 54px;
+    height: 54px;
+    position: absolute;
+    z-index: 5;
+    border: 1px dashed black;
+    background-color: white;
+    pointer-events: none;
+}

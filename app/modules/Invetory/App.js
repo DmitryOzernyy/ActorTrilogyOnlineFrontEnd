@@ -15,7 +15,10 @@ function mapDispatchToProps(dispatch){
     return {
         swapItem: function(src, dst){
             return dispatch(spaw_item_action(src, dst));
-        }
+        },
+        draggedItemSet: function(item){
+            return dispatch({ type: 'set_dragged_item', payload: item })
+        },
     };
 }
 
