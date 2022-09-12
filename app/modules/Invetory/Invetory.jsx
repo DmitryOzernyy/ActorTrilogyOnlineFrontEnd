@@ -47,7 +47,8 @@ class Invetory extends Component {
     }   
 
     componentWillUnmount(){
-        DnDDestructor();
+        const app = document.querySelector("#app");
+        app.onmouseup = null;
     }
     render() {
         return (
