@@ -3,7 +3,11 @@ const commandChatTrigger = (text) => {
         if(text[0] === '/'){
             TrilogyOnline.Emit("chatCommand", text);
         } else {
-            TrilogyOnline.Emit("chatSend", text);
+            const cmdObj = {
+                cmd: [1, 1, 1],
+                text
+            };
+            TrilogyOnline.Emit("chatSend", JSON.stringify(cmdObj));
         }
         
     }

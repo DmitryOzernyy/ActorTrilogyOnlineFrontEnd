@@ -13,6 +13,13 @@ const preloadedState = {
     render: "inventory",
 }
 
+TrilogyOnline.Events.MyEventInJS = (value) =>
+{
+	alert(value);
+
+	// TrilogyOnline.Emit("MyEventInCPP", value);
+};
+
 const store = configureStore({reducer: reducers, preloadedState});
 root.render(
 <Provider store={store}>
